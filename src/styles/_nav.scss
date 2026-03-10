@@ -1,0 +1,265 @@
+// =================================navigation styles =============
+.navbar {
+  // background: #5032325c;
+  background-color:var(--color-primary-100);
+  color: var(--color-white);
+  padding: 2rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4000;
+transition: background-color 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   padding: 1rem;
+}
+
+// .navbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 2rem;
+// }
+
+.navbar-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2em;
+    
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1rem;
+}
+li{
+  text-decoration:none;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:2em;
+    margin: 0;
+    // padding-right:2em;
+    // align-items:center;
+    
+}
+.nav-list-item a {
+    text-decoration: none;
+    color:var(--color-black);
+    font-weight: var(--fw-400);
+    transition: color 0.3s ease;
+    
+}
+
+
+.nav-list-item {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    position:relative;
+}
+
+.nav-list-item a:hover {
+    color:var(--color-opace-black);
+    // text-decoration: underline;
+    font-weight:500;
+}
+.nav-logo {
+  width: 95px; /* default desktop size */
+  display: block;
+  
+  width: 95px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+
+// styling the active mode of the link when the user is in a determined page this will happen the link is active
+.nav-link {
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #101010; 
+  text-decoration: underline;/* or whatever active color you want */
+  text-decoration-color: white; 
+}
+
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+.active{
+  opacity:0.5;
+}
+.submenu_active{
+  color:black;
+}
+.desktop-menu{
+  display:flex;
+  align-items:center;
+}
+.menu-btn {
+    display:none; /* Show hamburger button on mobile */
+    color:white;
+  }
+  .menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    font-size: 2rem;
+    cursor:pointer;
+    margin-left:auto;
+    color: black;
+    margin-right:1em;
+}
+
+// header styles
+
+.hero{
+background-color:var(--color-primary-100);
+background-image:url(../assets/images/bg-pattern-intro-desktop.svg), linear-gradient( to bottom, var(--color-primary-gradient-1), var(--color-primary-gradient-2) );
+  background-repeat: no-repeat;
+  background-position: 25% 45%;
+//   background-size: 350%;
+  padding-block: var(--header-top-space);
+  padding-inline: var(--header-bottom-space);
+  border-bottom-left-radius: var(--radius-md);
+  position: relative;
+}
+
+// hero styles 
+
+.hero .hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  padding: 8em 9em 5em 5em;
+}
+
+.hero h1 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color:white;
+  align-items:center;
+  text-align:center;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-weight: 100;
+  color:white;
+  align-items:center;
+}
+
+
+.second_part_navigation{
+  justify-content: space-between;
+  display:flex;
+  gap:1em;
+ 
+}
+
+.login {
+  color: var(--color-white);
+  text-decoration:none;
+  font-weight: 700;
+    padding-block: 0.7rem;
+  padding-inline: 2rem;
+  border-radius: 99px;
+  border: solid 2px var(--color-white);
+  white-space: nowrap;
+  text-decoration:none;
+ 
+
+}
+.login:hover {
+  background-color: var(--color-white);
+  color: var(  --color-primary-100);
+ font-weight:700;
+  padding-block: 0.7rem;
+  padding-inline: 2rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  border:solid 2px var(--color-white);
+  text-decoration:none;
+}
+.sign-up__btn {
+  background-color: var(--color-white);
+  color: var(  --color-primary-100);
+ font-weight:700;
+  padding-block: 0.7rem;
+  padding-inline: 2rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  text-decoration:none;
+}
+.sign-up__btn:hover {
+   color: var(--color-white);
+   background-color:transparent;
+  text-decoration:none;
+  font-weight: 700;
+    padding-block: 0.7rem;
+  padding-inline: 2rem;
+  border-radius: 99px;
+  border: solid 2px var(--color-white);
+  white-space: nowrap;
+  text-decoration:none;
+}
+.hero-content{
+  align-items:center;
+  display:flex;
+  flex-direction: column;
+}
+
+
+// menu navigaiton styles
+
+details {
+  cursor: pointer;
+}
+
+details[open] summary::before {
+  content: "▲"; /* Up arrow when open */
+  display:none;
+}
+
+
+
+
+
+.submenu {
+  padding-left: 0; /* Indent submenu items */
+}
+
+.details-body{
+  
+  background-color:white;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:1.5em;
+  border-radius:8px;
+
+  z-index: 1000;
+  min-width: 12rem;
+  box-shadow: 0 0 2rem var(--color-opace-black);
+}
+.submenu_list{
+  display:grid;
+  overflow:hidden;
+  gap:0.5em;border-radius:0.3em;
+}

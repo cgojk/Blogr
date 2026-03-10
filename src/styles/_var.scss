@@ -1,0 +1,65 @@
+
+:root{
+
+/* ### Colors */
+  --color-primary-100: hsl(356, 100%, 66%);
+  --color-primary-200: hsl(355, 100%, 74%);
+  --color-secondary-100: hsl(207, 13%, 34%);
+  --color-secondary-200: hsl(240, 10%, 16%);
+
+  --color-tertiary-100: hsl(208, 49%, 24%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-opace-black: hsl(0 0% 0% / 0.3);
+  --color-gray: hsl(0, 0%, 93%);
+  --color-white-soft: hsla(0, 0%, 100%, 0.7);
+
+  /* ### Gradient */
+
+  /* Background gradient --intro/CTA mobile nav:; */
+  --color-primary-gradient-1: hsl(13, 100%, 72%);
+  --color-primary-gradient-2: hsl(353, 100%, 62%);
+
+  /* Background gradient --body:; */
+  --color-secondary-gradient-1: hsl(237, 17%, 21%);
+  --color-secondary-gradient-2: hsl(237, 23%, 31%);
+
+  /* Fonts and font-weights/sizes */
+  --font-base-1: "Overpass", sans-serif;
+  --font-base-2: "Ubuntu", sans-serif;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --fs-heading-xl: clamp(2.15rem, 4.91vw, 4rem);
+  --fs-heading-md: clamp(1.8rem, 4.11vw, 1.9rem);
+
+  --fs-body: clamp(1rem, 2.5vw, 1.05rem);
+  --fs-body-lg: clamp(1.05rem, 2.4vw, 1.25rem);
+
+  /* space-tokens */
+  --space-1: 1rem;
+  --space-2: 2rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
+
+  /* layout/design sizes */
+  --header-top-space: clamp(7rem, 6.85vw, 6rem);
+  --header-bottom-space: clamp(1.2rem, 2.28vw, 3rem);
+  --nav-max-width: 74rem;
+  --logo-size: clamp(5rem, 12vw, 7rem);
+
+  --hero-bottom-space: clamp(6rem, 13.7vw, 7rem);
+  --hero-action-max-width: 20rem;
+  --hero-action-bottom-space: clamp(2rem, 4.57vw, 2.5rem);
+
+  /* border radius */
+  --radius-md: 8rem;
+  --radius-sm:4rem;
+}
+
+
+

@@ -1,0 +1,72 @@
+// =================================navigation styles =============
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap:2em;
+    margin: 0;
+    padding-right:2em;
+    
+}
+.nav-list-item a {
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+}
+
+.nav-list-item {
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.nav-list-item a:hover {
+    color: #031b37;
+    text-decoration: underline;
+    font-weight:500;
+}
+
+.nav-logo {
+    width: 65px;
+    margin-left:1em;
+    cursor:pointer;
+    
+    
+
+}
+// styling the active mode of the link when the user is in a determined page this will happen the link is active
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #101010; 
+  text-decoration: underline;/* or whatever active color you want */
+  text-decoration-color: #c2a83f; 
+}
+
+.nav-title {
+    color:#dfd932;
+    text-decoration: none;
+    font-size:1.5rem;
+
+}
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+// header styles
+
+.header{
+background-color:var( --color-primary-100) ;;
+background-image: url(images/bg-pattern-intro-mobile.svg), linear-gradient( to bottom, var(--color-primary-gradient-1), var(--color-primary-gradient-2) );
+background-repeat: no-repeat;
+background-position: 35% 35%;
+background-size: 350%;
+padding-block: var(--header-top-space);
+padding-inline: var(--header-bottom-space);
+border-bottom-left-radius: var(--radius-md);
+position: relative;
+}

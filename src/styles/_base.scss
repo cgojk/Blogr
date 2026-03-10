@@ -1,0 +1,56 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+    padding:0;
+}
+
+/* Core body defaults */
+body {
+    font-family:var(--font-base-1);
+  min-height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding: 0 2rem;
+}
+.container-sm{
+  max-width:1000px;
+  margin:0 auto;
+  padding: 0 2rem;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+/* This allows main content to expand and push footer to the bottom */
+.main-content {
+  flex: 1;
+}
+
+.hero_btn{
+  margin-top:2em;
+}

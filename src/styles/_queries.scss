@@ -1,0 +1,272 @@
+
+
+
+@media (max-width: 1000px) {
+
+  .nav-list {
+    gap: 1.2rem;
+  }
+
+  .navbar-flex {
+    gap: 1rem;
+  }
+
+  .navbar {
+    padding: 1.5rem 1.5rem;
+  }
+
+}
+
+/* Desktop: 1001px+ */
+
+@media (max-width: 768px) {
+
+  .footer-content{
+  
+  grid-template-columns:1fr;
+  text-align:center;
+}
+.footer-links{
+  grid-template-columns: 1fr;
+  
+}
+.footer-brand{
+  justify-self:center;
+}
+
+    .navbar {
+    flex-direction: row; /* logo + hamburger inline */
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+  }
+.navbar-inner {
+justify-content: space-between;
+ align-items: center;
+   display:flex;
+    position: fixed;
+    top: 0;
+    z-index: 3000;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    background: linear-gradient(
+  to bottom,
+  var(--color-primary-gradient-1),
+  var(--color-primary-gradient-2)
+);
+      margin-top:0rem;
+}
+
+ 
+.wraper_container_middlesection{
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding: 2rem;
+}
+
+.middle-image{
+  margin-top:-150px;
+  // margin-top:0;
+  width:420px;
+  max-width:90%;
+}
+
+.middle-section{
+  background-position:center -300px, center;
+  background-size:700px, cover;
+}
+
+
+
+
+
+
+
+  /* Mobile-specific styles */
+  .menu-btn {
+    display: block; /* Show hamburger button on mobile */
+    color:white;
+  }
+ 
+  .nav-logo {
+    width: 80px; /* smaller for mobile */
+  }
+
+   
+
+ 
+
+ /* Hide whole menu container by default */
+  .navbar-flex {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+     padding: 1.5rem;
+    width: 100%;
+     margin: 4.5rem auto 0 auto;
+     padding: 1rem 1.5rem;
+    box-shadow: 0 0 1rem var(--color-opace-black);
+  }
+ .navbar-flex.open {
+    display: flex;
+  }
+
+
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;     // Center menu items
+}
+
+
+.second_part_navigation {
+  display: flex;
+  flex-direction: column;
+ gap: 0.5rem;
+ margin-top: 1rem;
+width: 100%;
+align-items: center;     // Center login/sign-up buttons
+margin-bottom:1em;
+}
+
+.nav-link,
+.nav-list-item a,
+.login,
+.sign-up__btn {
+  color: black;           // Make all text black
+  text-align: center;
+  width: 100%;
+}
+
+details[open] .details-body {
+    max-height: 500px; /* Adjust based on content */
+    opacity: 1;
+  }
+
+
+
+  .details-body {
+    position: static;       // Remove absolute positioning
+    top: auto;              // Reset top
+    left: auto;             // Reset left
+    padding: 1rem;          // Adjust padding if needed
+    margin-top: 0.5rem;     // Small space under summary
+    border-radius: 0.5rem;  
+    background-color: #f9f9f9; // Light gray background (or white)
+    box-shadow: none;
+        
+  }
+
+  .submenu_list {
+    display: flex;           // Stack submenu items vertically
+    flex-direction: column;  
+    gap: 0.5rem;            
+    align-items: center;     // Center items horizontally
+  }
+
+   summary {
+    cursor: pointer;
+//     list-style: none;
+    font-weight: 600;
+    padding: 0.5rem 0;
+   
+    
+   }
+
+
+
+
+  .login {
+    border: 2px solid var(--color-primary-100);
+    color: var(--color-primary-100);
+    background-color: var(--color-white);
+  }
+
+  .login:hover {
+    background-color: var(--color-primary-100);
+    color: var(--color-white);
+  }
+
+  .sign-up__btn {
+    background-color:var(--color-primary-100);
+    color: var(--color-white);
+  }
+
+  .sign-up__btn:hover {
+    background-color: var(--color-primary-100);
+  }
+   
+
+.article_container{
+  flex-direction: column;
+  text-align: center;
+}
+
+// .article-container_image{
+//   order:1;
+// }
+
+.main_container_article{
+  order:2;
+}
+
+// .article_container.reverse{
+//   flex-direction: column;
+// }
+
+
+
+
+}
+
+
+
+
+ @media (max-width:478px){
+    .hero h1{
+        font-size:3rem;
+        
+        }
+
+.hero .hero-flex{
+    
+    padding:2em;
+
+    
+ }
+ .hero{
+    border-bottom-left-radius: var(--radius-sm);
+ }
+.middle_article-title{
+  font-size:2rem;
+}
+
+ }
+
+ @media (max-width:375px){
+    .hero h1{
+        font-size:2rem;
+        
+        }
+
+.hero .hero-flex{
+    
+    padding:1em;
+
+    
+ }
+ .hero{
+    border-bottom-left-radius: var(--radius-sm);
+ }
+
+
+ }
+
+
